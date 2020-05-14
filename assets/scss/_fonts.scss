@@ -1,0 +1,61 @@
+/* Barlow Fonts */
+@font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/Barlow-SemiBold.eot');
+    src: local('Barlow SemiBold'), local('Barlow-SemiBold'),
+        url('../fonts/Barlow-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Barlow-SemiBold.woff2') format('woff2'),
+        url('../fonts/Barlow-SemiBold.woff') format('woff'),
+        url('../fonts/Barlow-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/Barlow-Medium.eot');
+    src: local('Barlow Medium'), local('Barlow-Medium'),
+        url('../fonts/Barlow-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Barlow-Medium.woff2') format('woff2'),
+        url('../fonts/Barlow-Medium.woff') format('woff'),
+        url('../fonts/Barlow-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/Barlow-Regular.eot');
+    src: local('Barlow Regular'), local('Barlow-Regular'),
+        url('../fonts/Barlow-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Barlow-Regular.woff2') format('woff2'),
+        url('../fonts/Barlow-Regular.woff') format('woff'),
+        url('../fonts/Barlow-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/Barlow-Black.eot');
+    src: local('Barlow Black'), local('Barlow-Black'),
+        url('../fonts/Barlow-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Barlow-Black.woff2') format('woff2'),
+        url('../fonts/Barlow-Black.woff') format('woff'),
+        url('../fonts/Barlow-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/Barlow-Bold.eot');
+    src: local('Barlow Bold'), local('Barlow-Bold'),
+        url('../fonts/Barlow-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Barlow-Bold.woff2') format('woff2'),
+        url('../fonts/Barlow-Bold.woff') format('woff'),
+        url('../fonts/Barlow-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+

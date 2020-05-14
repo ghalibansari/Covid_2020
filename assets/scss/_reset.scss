@@ -1,0 +1,351 @@
+/*! 02.0 - RESET */
+body {
+	font-family:  'Barlow', Arial, Helvetica, sans-serif;
+	color: #262f3e;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+}
+img{
+    max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6, p, ol, table{
+	margin-bottom: 10px;
+    line-height: 1.6;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: 500;
+    color: #001244;
+}
+label{
+    font-weight: 500;
+    font-size: .86em;
+}
+h1, .h1{
+	font-size: 36px;
+}
+h2, .h2{
+	font-size: 28px;
+}
+h3, .h3{
+	font-size: 24px;
+}
+h4, .h4{
+	font-size: 22px;
+}
+h5, .h5{
+	font-size: 
+        18px;
+}
+h6, .h6{
+	font-size: 16px;
+}
+p{
+	font-size: .86em;
+    font-weight: 400;
+    :last-child{
+        margin-bottom: 0;
+    }
+}
+p.lead{
+	font-size: 1.3em;
+    &.small{
+        font-size: 1em;
+        font-weight: 400;
+    }
+}
+blockquote{
+    font-size: 1em;
+    line-height: 1.8;
+    font-weight: 300;
+}
+.text-light h1, .text-light h2, .text-light h3, .text-light h4, .text-light h5, .text-light h6, .text-light span, .text-light input{
+    color: #fff !important;
+}
+@media (min-width:768px){
+    h1, .h1{
+	    font-size: 48px;
+    }
+    h2, .h2{
+        font-size: 36px;
+    }
+    h3, .h3{
+        font-size: 30px;
+    }
+    h4, .h4{
+        font-size: 24px;
+    }
+    h5, .h5{
+        font-size: 
+            21px;
+    }
+    h6, .h6{
+        font-size: 16px;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+.text{
+    &-strong{
+        font-weight: 500;
+        color: #0d6bff;
+    }
+}
+ul , ol{
+	padding: 0px;
+	margin: 0px;
+    list-style: none;
+}
+b, strong {
+	font-weight: 600;
+}
+a{
+	outline: 0;
+	transition: all 0.5s;
+	color: #262f3e;
+	&:link, &:visited{
+    	text-decoration: none;
+	}
+	&:hover, &:focus, &:active{
+		outline: 0;
+		color: #0d6bff;
+        box-shadow: none;
+	}
+}
+@media (min-width: 1200px){
+    .container{
+        max-width: 1200px;
+    }
+}
+
+
+
+$base_unit: 10px;
+
+$small:     $base_unit*1;
+$medium:    $base_unit*2;
+$regular:   $base_unit*3;
+$large:     $regular*2;
+$exlarge:   $regular+$large;
+
+//// Gaps ////
+//////////////
+.gap {
+    height: $regular;
+}
+@each $gap, $size in (s: $small, m: $medium, l: $large, x: $exlarge) {
+  .gap-#{$gap} {
+    height: $size;
+  }
+}
+@for $gaps from 1 through 10 {
+    .gap-#{$gaps}x { 
+        height:  $gaps * $base_unit;
+    }
+}
+
+
+//// Padding ////
+/////////////////
+// Regular size
+@each $pd, $side in (t: top, b: bottom, l: left, r: right) {
+  .pd#{$pd} {
+    padding-#{$side}: $regular;
+  }
+}
+.pd {
+    @extend .pdt;
+    @extend .pdb;
+    @extend .pdl;
+    @extend .pdr;
+}
+.pdx {
+    @extend .pdl;
+    @extend .pdr;
+}
+.pdy {
+    @extend .pdt;
+    @extend .pdb;
+}
+
+// Different Sizes
+@each $pdt, $size in (s: $small, m: $medium, r: $regular, l: $large, x: $exlarge) {
+    .pdt-#{$pdt} {
+        padding-top: $size !important;
+    }
+    .pd-#{$pdt} {
+        @extend .pdt-#{$pdt};
+    }
+    .pdy-#{$pdt} {
+        @extend .pdt-#{$pdt};
+    }
+}
+@each $pdb, $size in (s: $small, m: $medium, r: $regular, l: $large, x: $exlarge) {
+    .pdb-#{$pdb} {
+        padding-bottom: $size !important;
+    }
+    .pd-#{$pdb} {
+        @extend .pdb-#{$pdb};
+    }
+    .pdy-#{$pdb} {
+        @extend .pdb-#{$pdb};
+    }
+}
+@each $pdl, $size in (s: $small, m: $medium, r: $regular, l: $large, x: $exlarge) {
+    .pdl-#{$pdl} {
+        padding-left: $size !important;
+    }
+    .pd-#{$pdl} {
+        @extend .pdl-#{$pdl};
+    }
+    .pdx-#{$pdl} {
+        @extend .pdl-#{$pdl};
+    }
+}
+@each $pdr, $size in (s: $small, m: $medium, r: $regular, l: $large, x: $exlarge) {
+    .pdr-#{$pdr} {
+        padding-right: $size !important;
+    }
+    .pd-#{$pdr} {
+        @extend .pdr-#{$pdr};
+    }
+    .pdx-#{$pdr} {
+        @extend .pdr-#{$pdr};
+    }
+}
+//@media (min-width:576px) {
+//    $small:     $base_unit*1;
+//    $medium:    $base_unit*2;
+//    $regular:   $base_unit*3;
+//    $large:     $regular*2;
+//    $exlarge:   $regular+$large;
+//    
+//    @each $pd, $side in (t: top, b: bottom, l: left, r: right) {
+//      .pd#{$pd} {
+//        padding-#{$side}: $regular;
+//      }
+//    }
+//}
+
+//// Margins ////
+/////////////////
+@each $mg, $side in (t: top, b: bottom, l: left, r: right) {
+    .mg#{$mg} {
+        margin-#{$side}: $regular;
+    }
+}
+.mg {
+    @extend .mgt;
+    @extend .mgb;
+    @extend .mgl;
+    @extend .mgr;
+}
+.mgx {
+    @extend .mgl;
+    @extend .mgr;
+}
+.mgy {
+    @extend .mgt;
+    @extend .mgb;
+}
+.mg-fix {
+    margin-bottom: -20px;
+    &-lg {
+        margin-bottom: -45px;
+    }
+    &-md {
+        margin-bottom: -30px;
+    }
+    &-sm {
+        margin-bottom: -15px;
+    }
+    &-xs {
+        margin-bottom: -10px;
+    }
+}
+
+// Different Sizes
+@each $mgt, $size in (s: $small, m: $medium, r: $regular, l: $large, x: $exlarge) {
+    .mgt-#{$mgt} {
+        margin-top: $size !important;
+    }
+    .mg-#{$mgt} {
+        @extend .mgt-#{$mgt};
+    }
+    .mgy-#{$mgt} {
+        @extend .mgt-#{$mgt};
+    }
+}
+@each $mgb, $size in (s: $small, m: $medium, r: $regular, l: $large, x: $exlarge) {
+    .mgb-#{$mgb} {
+        margin-bottom: $size !important;
+    }
+    .mg-#{$mgb} {
+        @extend .mgb-#{$mgb};
+    }
+    .mgy-#{$mgb} {
+        @extend .mgb-#{$mgb};
+    }
+}
+@each $mgl, $size in (s: $small, m: $medium, r: $regular, l: $large, x: $exlarge) {
+    .mgl-#{$mgl} {
+        margin-left: $size !important;
+    }
+    .mg-#{$mgl} {
+        @extend .mgl-#{$mgl};
+    }
+    .mgx-#{$mgl} {
+        @extend .mgl-#{$mgl};
+    }
+}
+@each $mgr, $size in (s: $small, m: $medium, r: $regular, l: $large, x: $exlarge) {
+    .mgr-#{$mgr} {
+        margin-right: $size !important;
+    }
+    .mg-#{$mgr} {
+        @extend .mgr-#{$mgr};
+    }
+    .mgx-#{$mgr} {
+        @extend .mgr-#{$mgr};
+    }
+}
+
+.mgb-m10{
+    margin-bottom: -10px;
+}
+.mgb-m20{
+    margin-bottom: -20px;
+}
+.mgb-m30{
+    margin-bottom: -30px;
+}
+.mgb-m40{
+    margin-bottom: -40px;
+}
+.mgb-m50{
+    margin-bottom: -50px;
+}
+
+.mgt-m10{
+    margin-top: -10px;
+}
+.mgt-m20{
+    margin-top: -20px;
+}
+.mgt-m30{
+    margin-top: -30px;
+}
+.mgt-m40{
+    margin-top: -40px;
+}
+.mgt-m50{
+    margin-top: -50px;
+}
+

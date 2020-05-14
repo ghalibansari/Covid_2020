@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Design Hunt">
+
+    <!-- Fav Icon  -->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon">
+
+    <!-- Site Title  -->
+    <title>SMB - Coronavirus (COVID-19) Combat Squad</title>
+
+    <!-- Vendor Bundles CSS -->
+    <link rel="stylesheet" href="assets/css/vendor.bundle.css" >
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+
+    <!-- Etc Bundles CSS -->
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" >
+    
+    <!-- Custom Styles for this template -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <div class="page-wraper">
+         <header class="header clearheader" id="banner">
+            <div class="navbar-bar navbar-wt" id="active-sticky">
+                <div class="container">
+                    <div class="navbar-innr ml-0">
+                        <div class="navbar-base">
+                            <a class="navbar-logo-wt" href="./"><img src="images/logo-dark.png" srcset="images/logo-dark2x2.png" alt="logo"></a>
+                            <ul class="navbar-tools d-lg-none">
+                                <li><a href="#" class="navbar-toggle"><i class="fas fa-bars"></i></a></li>
+                            </ul><!-- .navbar-tools -->
+                        </div><!-- .navbar-base -->
+                        <div class="navbar-content navbar-content-wt navbar-toggle-content mr-0">
+                            <a href="#" class="navbar-toggle navbar-close"><i class="fas fa-times"></i></a>
+                            <ul class="navbar-menu">
+                                <li>
+                                    <a class="menu-link" href="#">Home</a>
+                                    <ul class="navbar-dropdown dropdown-content">
+                                        <li><a href="https://smartmedicalbuyer.com">Smart Medical Buyer</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="menu-link" href="#livedata">Live Data</a>
+                                </li>
+                                <li>
+                                    <a class="menu-link" href="#about">About</a>
+                                    <ul class="navbar-dropdown dropdown-content">
+                                        
+                                        
+                                        <li>
+                                            <a class="menu-link" href="#symptoms">Symptoms</a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-link" href="#protect">Protective Measures</a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-link" href="#prevention">Prevention</a>
+                                        </li>
+                                        <li>
+                                        
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="menu-link" href="#videos">Videos</a>
+                                </li>
+                                <li>
+                                    <a class="menu-link" href="#faq-section">FAQ</a>
+                                
+                                </li>
+                               
+                                <li>
+                                    <a class="menu-link" href="#footer">Contact</a>
+                                </li>
+                            </ul><!-- .navbar-menu -->
+                        </div><!-- .navbar-content -->
+                        <div class="top-symptoms">
+                            <a class="btn" href="#">+ Donate Medical Relief</a>
+                        </div>
+                    </div><!-- .navbar-innr -->
+                </div>
+            </div><!-- .navbar-bar -->
+            <div class="banner banner-wt">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-9">
+                            <div class="banner-text banner-text-wt banner-border text-center">
+                                
+                                <h1 style="margin-top:10%">JOIN SMB CO-SQUAD in fighting <span class="text-col-a">COVID-19</span> </h1>
+                                <div class="banner-btn">
+                                    <a href="#" class="btn btn-alt"><i class="las la-shield-alt"></i> I am a Buyer of Covid-19 products</a>
+                                    <a href="#" class="btn btn-alt"><i class="las la-sync"></i> I sell Covid-19 products</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="main-wrapper">
+             
+              <section class="section-lg pt-lg-0 counter-wt">
+               <div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="row space-y-40 justify-content-center">
+
+                                <div class="col-lg-3 col-sm-6">
+									<div class="counter-single">
+										<span class="counter-amount" id="confirmed_cases">X</span>
+										<h4 class="counter-title">Confirmed cases</h4>
+										<span class="counter-date">Updated: 19 April 2020, 22:03 GMT+6</span>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-6">
+									<div class="counter-single counter-single-alt">
+										<span class="counter-amount" id="active_cases">X</span>
+										<h4 class="counter-title">Active Cases</h4>
+										<span class="counter-date">Updated: 19 April 2020, 22:03 GMT+6</span>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-6">
+									<div class="counter-single">
+										<span class="counter-amount" id="recovered_cases">X</span>
+										<h4 class="counter-title">Total Recovered</h4>
+										<span class="counter-date">Updated: 19 April 2020, 22:03 GMT+6</span>
+									</div>
+								</div>
+
+                                <div class="col-lg-3 col-sm-6">
+									<div class="counter-single counter-single-alt">
+										<span class="counter-amount" id="death_cases">X</span>
+										<h4 class="counter-title">Confirmed deaths</h4>
+										<span class="counter-date">Updated: 19 April 2020, 22:03 GMT+6</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+           </section>
+           <!--End Section-->
+            
+           <section class="section-lg pt-lg-0 counter-wt">
+            <div class="container">
+                <div class="row space-y-40 justify-content-center">
+                    <div class="col-lg-8 col-12">
+                        <div class="covid-head text-center">
+                             <span class="covid-top">Prepare yourself</span>
+                             <h2>COVID- 19 Products by SMB</h2>
+                       </div>
+                    </div>
+                </div>
+
+                 <div class="row">
+                     <div class="col-lg-12">
+                         <div class="row space-y-40 justify-content-center">
+                             <div class="col-lg-3 col-sm-6">
+                                 <div class="counter-single-product" >
+                                    <div style = "text-align: center">
+                                        <img src="images/thermometer.svg" height="150">
+                                    <h4 class="counter-title">IR Thermometer</h4>
+                                    <div>
+                                        <a class="btn" href="#">See More</a>
+                                    </div>
+                                 </div>
+                                </div>
+                             </div>
+                             <div class="col-lg-3 col-sm-6">
+                                 <div class="counter-single-product counter-single-alt">
+                                    <div style = "text-align: center">
+                                        <img src="images/hand-sanitizer.svg" height="150">
+                                    <h4 class="counter-title">Hand Sanitizers</h4>
+                                    <div>
+                                        <a class="btn" href="#">See More</a>
+                                    </div></div>
+                                 </div>
+                             </div>
+                             <div class="col-lg-3 col-sm-6">
+                                 <div class="counter-single-product">
+                                    <div style = "text-align: center">
+                                        <img src="images/gloves.svg" height="150">
+                                    <h4 class="counter-title">Medical Gloves</h4>
+                                    <div>
+                                        <a class="btn" href="#">See More</a>
+                                    </div></div>
+                                 </div>
+                             </div>
+                             <div class="col-lg-3 col-sm-6">
+                                 <div class="counter-single-product counter-single-alt">
+                                    <div style = "text-align: center">
+                                        <img src="images/protective.svg" height="150">
+                                    <h4 class="counter-title">Protection Kits</h4>
+                                    <div>
+                                        <a class="btn" href="#">See More</a>
+                                    </div></div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+        </section>
+        <!--End Section-->
+         
+           <section class="section-lg pt-0 pb-0" id="livedata">
+               <div class="container">
+                  <div class="row justify-content-center">
+                       <div class="col-lg-8 col-12">
+                           <div class="covid-head text-center">
+                                <span class="covid-top">COVID-19 Spread Data</span>
+                                <h2>COVID- 19 Live Spread Data</h2>
+                                <p>See LIVE data about COVID-19 spread across various parts of India</p>
+                          </div>
+                       </div>
+                   </div>
+                   <div class="row space-y-40">
+                       <div class="col-md-12">
+                        <div>Box 1 with Image of India</div>
+                        <div align="center"><div id="visualization"></div></div>
+                        <div>Box 2 with State details</div>
+                        <!-- <div id="chartContainer" style="height: 850px; width: 100%;"></div> -->
+                        <!--begin: Datatable -->
+                        <div class="row" style="padding-top: 30px;">
+                            <div class="col-sm-12 col-md-8" style="padding: 30px;">
+                                <table id="myTable">
+                                    <thead>
+                                        <tr>
+                                            <th>State / UT's</th>
+                                            <th>Active</th>
+                                        </tr>
+                                        <tbody id="myTableData">
+                                        </tbody>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="col-sm-12 col-md-4 row" style="padding: 30px;">
+                                <div class="col-12" id='name_box' style="text-align: center; font-size: 33px; margin: auto;"></div>
+                                <div class="col-6" id='total_cases_box' style="text-align: center; font-size: 25px;"></div>
+                                <div class="col-6" id='active_cases_box' style="text-align: center; font-size: 25px;"></div>
+                                <div class="col-6" id='recovered_cases_box' style="text-align: center; font-size: 25px;"></div>
+                                <div class="col-6" id='death_cases_box' style="text-align: center; font-size: 25px;"></div>
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+                   </div>
+               </div>
+           </section>
+           <!--End Section-->
+           
+           <section class="section-lg section shape-a" id="about">
+               <div class="container">
+                   <div class="row space-y-40 align-items-center justify-content-between">
+                       <div class="col-md-5">
+                           <div class="covid-about-img">
+                               <img src="images/content-b.png" alt="">
+                           </div>
+                       </div>
+                       <div class="col-md-7 col-xl-6">
+                           <div class="covid-about">
+                               <span class="covid-top">ABOUT COVID -19</span>
+                               <div class="covid-about-text">
+                                   <h2>About Coronavirus (COVID-19)</h2>
+                                   <p><span class="text-strong">Coronavirus disease (COVID-19)</span> is an infectious disease caused by a newly discovered coronavirus. Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.</p>
+                                   <p class="mb-md-3 mt-md-3">COVID-19 is spread through respiratory droplets when an infected person coughs, sneezes or speaks. People can also be infected by touching a contaminated surface and then their eyes, mouth or nose. 
+
+                                </p>
+                                <p class="mb-md-3 mt-md-3">The most common symptoms of COVID-19 are dry cough, tiredness and fever. Some people may develop more severe forms of the disease, such as pneumonia. The best way to confirm if you have  the virus producing COVID-19 disease is with a laboratory test.  You cannot confirm it with a breathing exercise, which can even be dangerous.
+
+
+
+                                </p>
+                                <p class="mb-md-3 mt-md-3">Information Source :WHO
+                                </p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </section>
+           <!--End Section-->
+           
+            <section class="section-lg covid-bg pb-md-0" id="symptoms">
+               <div class="container">
+                  <div class="row justify-content-center">
+                       <div class="col-lg-8 col-12">
+                           <div class="covid-head text-center">
+                                <span class="covid-top">COVID -19 SYMPTOMS</span>
+                                <h2>Coronavirus Symptoms</h2>
+                                <p>Most people infected with the COVID-19 virus will experience one or more of the following symptoms:</p>
+                          </div>
+                       </div>
+                   </div>
+                   <div class="row space-y-40 align-items-center">
+                       <div class="col-md-5">
+                           <div class="symptom-left">
+                               <img src="images/content-e.png" alt="">
+                           </div>
+                       </div>
+                       <div class="col-md-7">
+                           <div class="row space-y-40">
+                               <div class="col-sm-4 col-6">
+                                   <div class="symptom-wrap text-center">
+                                       <div class="symptom-img">
+											<img src="images/symp-a.png" alt="">
+                                       </div>
+                                       <div class="symptom-text">
+                                       		<h4>Dry Cough</h4>
+                                       </div>
+                                   </div> 
+                               </div>
+                               <div class="col-sm-4 col-6">
+                                   <div class="symptom-wrap text-center">
+                                       <div class="symptom-img">
+											<img src="images/symp-b.png" alt="">
+                                       </div>
+                                       <div class="symptom-text">
+                                       		<h4>Sore Throat</h4>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-sm-4 col-6">
+                                   <div class="symptom-wrap text-center">
+                                       <div class="symptom-img">
+											<img src="images/symp-c.png" alt="">
+                                       </div>
+                                       <div class="symptom-text">
+                                       		<h4>Cold</h4>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-sm-4 col-6">
+                                   <div class="symptom-wrap text-center">
+                                       <div class="symptom-img">
+											<img src="images/symp-d.png" alt="">
+                                       </div>
+                                       <div class="symptom-text">
+                                       		<h4>Fever</h4>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-sm-4 col-6">
+                                   <div class="symptom-wrap text-center">
+                                       <div class="symptom-img">
+											<img src="images/symp-e.png" alt="">
+                                       </div>
+                                       <div class="symptom-text">
+                                       		<h4>Headache</h4>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-sm-4 col-6">
+                                   <div class="symptom-wrap text-center">
+                                       <div class="symptom-img">
+											<img src="images/symp-f.png" alt="">
+                                       </div>
+                                       <div class="symptom-text">
+                                       		<h4>Vomiting</h4>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </section>
+            <!--End Section-->
+           
+           <section class="section-lg pb-0" id="protect">
+               <div class="container">
+                   <div class="row space-y-40 align-items-center justify-content-between">
+                       <div class="col-lg-5 col-12 order-md-last">
+                           <div class="measure-img">
+                               <img src="images/content-f.png" alt="">
+                           </div>
+                       </div>
+                       <div class="col-lg-7">
+                           <div class="measure-text">
+                               <h2>Basic protective measures against the new coronavirus</h2>
+                               <p>Stay aware of the latest information on the COVID-19 outbreak, available on the WHO website and through your national and local public health authority. Most people who become infected experience mild illness and recover, but it can be more severe for others. Take care of your health and protect others by doing the following:</p>
+                               <p><span class="text-strong">Wash your hands frequently:</span> Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water.</p>
+                               <p><sapn class="text-strong">Maintain social distancing:</sapn> Maintain at least 1 metre (3 feet) distance between yourself and anyone who is coughing or sneezing.</p>
+                               <p><span class="text-strong">Avoid touching eyes, nose and mouth:</span> Why? Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body and can make you sick</p>
+                               <p><span class="text-strong">Practice respiratory hygiene:</span> Make sure you, and the people around you, follow good respiratory hygiene. This means covering your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately.</p>
+                               <p><span class="text-strong">If you have fever, cough and difficulty breathing, seek medical care early:</span> Stay home if you feel unwell. If you have a fever, cough and difficulty breathing, seek medical attention and call in advance. Follow the directions of your local health authority.</p>
+                               
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </section>
+            <!--End Section-->
+           
+           <section class="section-lg covid-prevention" id="prevention">
+               <div class="container">
+                   <div class="row justify-content-center">
+                       <div class="col-lg-8 col-12">
+                           <div class="covid-head text-center">
+                                <span class="covid-top">COVID -19 Prevention</span>
+                                <h2>Coronavirus Prevention</h2>
+                              
+                          </div>
+                       </div>
+                   </div>
+                   <div class="row space-y-40 align-items-center justify-content-between">
+                       <div class="col-md-6 col-12 order-md-last">
+                           <div class="covid-prevention-img">
+                               <img src="images/content-c.png" alt="">
+                           </div>
+                       </div>
+                       <div class="col-md-5">
+                           <div class="covid-prevention-text">
+                               <h3>“There are Decades Where Nothing Happens, and There are Weeks Where Decades Happen”</h3>
+                               <p>There are millions of people who got affected around the world with CORONAVIRUS or officially COVID-19. In this tragic situation, let’s support each other and spread love to families who have lost their loved ones.</p>
+                               <div class="covid-prevention-list">
+                                   <h4>Let’s practice:</h4>
+                                   <ul>
+                                       <li>Maintain social distance</li>
+                                       <li>Avoid touching eyes, nose, and mouth</li>
+                                       <li>Practice respiratory hygiene</li>
+                                       <li>Drink more water</li>
+                                       <li>Cover your face with a mask</li>
+                                       <li>Stay informed and follow given advice.</li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </section>
+            <!--End Section-->
+             			
+           <section class="section-lg shape-b" id="videos">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-12">
+                        <div class="covid-head text-center">
+                             <span class="covid-top">COVID-19 Learning center</span>
+                             <h2>Coronavirus Medical Information</h2>
+                           
+                       </div>
+                    </div>
+                </div>
+                <div class="row space-y-40">
+                    <div class="col-md-4">
+                        <div class="covid-port">
+                            <iframe width="365" height="262" src="https://www.youtube.com/embed/mOV1aBVYKGA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="covid-link-text">
+                            <a href="#"><h5>What is Novel coronavirus (2019-nCoV)</h5></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="covid-port">
+                            <iframe width="365" height="262" src="https://www.youtube.com/embed/YRfwZcLeOm4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="covid-link-text">
+                            <a href="#"><h5>Coronavirus: Virology, Epidemiology, Pathophysiology</h5></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="covid-port">
+                            <iframe width="365" height="262" src="https://www.youtube.com/embed/U7F1cnWup9M?start=91" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="covid-link-text">
+                            <a href="#"><h5>Zinc and chloroquine for the treatment of COVID-19?</h5></a>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </section>
+        <!--End Section-->
+        
+            <section id="faq-section" class="faq-section section-lg shape-c mb-0">
+				<div class="container">
+                   <div class="row justify-content-center">
+                       <div class="col-lg-8 col-12">
+                           <div class="covid-head text-center">
+                                <span class="covid-top">CORONAVIRUS FAQ</span>
+                                <h2>Frequently Asked Questions</h2>
+                                
+                          </div>
+                       </div>
+                   </div>
+					<div class="row justify-content-between">
+						<div class="col-xl-3 col-lg-4">
+							<div class="nav nav-pills faq-nav" id="faq-tabs" role="tablist" aria-orientation="vertical">
+								<a href="#tab1" class="nav-link active" data-toggle="pill" role="tab" aria-controls="tab1" aria-selected="true">
+									<i class="mdi mdi-help-circle"></i> COVID -19
+								</a>
+								<a href="#tab2" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab2" aria-selected="false">
+									<i class="mdi mdi-account"></i> Prevention
+								</a>
+								<a href="#tab3" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab3" aria-selected="false">
+									<i class="mdi mdi-account-settings"></i> Symptoms
+								</a>
+								<a href="#tab4" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab4" aria-selected="false">
+									<i class="mdi mdi-heart"></i> Treatment
+								</a>
+								<a href="#tab5" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab5" aria-selected="false">
+									<i class="mdi mdi-coin"></i> Others
+								</a>
+								<p class="pl-4 tab-bottom"><span class="tab-address">Can’t find answer?</span> <span class="tab-address">Mail us at <a href="mailto:info@smartmedicalbuyer.com">info@smartmedicalbuyer.com</a></span></p>
+							</div>
+						</div>
+						<div class="col-lg-8">
+							<div class="tab-content tab-custom" id="faq-tab-content">
+								<div class="tab-pane show active" id="tab1" role="tabpanel" aria-labelledby="tab1">
+									<div class="accordion" id="accordion-tab-1">
+										<div class="card">
+											<div class="card-header" id="accordion-tab-1-heading-1">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-1" aria-expanded="false" aria-controls="accordion-tab-1-content-1">1. What is novel corona virus?</button>
+												</h5>
+											</div>
+											<div class="collapse show" id="accordion-tab-1-content-1" aria-labelledby="accordion-tab-1-heading-1" data-parent="#accordion-tab-1">
+												<div class="card-body">
+													<p>Coronaviruses are a large family of viruses which may cause illness in animals or humans.  In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19.</p>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-header" id="accordion-tab-1-heading-2">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-2" aria-expanded="false" aria-controls="accordion-tab-1-content-2">2. What is COVID-19?</button>
+												</h5>
+											</div>
+											<div class="collapse" id="accordion-tab-1-content-2" aria-labelledby="accordion-tab-1-heading-2" data-parent="#accordion-tab-1">
+												<div class="card-body">
+													<p>COVID-19 is the infectious disease caused by the most recently discovered coronavirus. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019.</p>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-header" id="accordion-tab-1-heading-3">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-3" aria-expanded="false" aria-controls="accordion-tab-1-content-3">3. What is Quarantine?</button>
+												</h5>
+											</div>
+											<div class="collapse" id="accordion-tab-1-content-3" aria-labelledby="accordion-tab-1-heading-3" data-parent="#accordion-tab-1">
+												<div class="card-body">
+													<p>Quarantine separates and restricts the movement of people who were exposed to a contagious disease to see if they become sick. These people may have been exposed to a disease and do not know it, or they may have the disease but do not show symptoms.</p>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-header" id="accordion-tab-1-heading-4">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-4" aria-expanded="false" aria-controls="accordion-tab-1-content-4">4. What is Isolation?</button>
+												</h5>
+											</div>
+											<div class="collapse" id="accordion-tab-1-content-4" aria-labelledby="accordion-tab-1-heading-4" data-parent="#accordion-tab-1">
+												<div class="card-body">
+													<p>The separation of a person or group of people known or reasonably believed to be infected with a communicable disease and potentially infectious from those who are not infected to prevent spread of the communicable disease. Isolation for public health purposes may be voluntary or compelled by federal, state, or local public health order</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="tab2" role="tabpanel" aria-labelledby="tab2">
+									<div class="accordion" id="accordion-tab-2">
+										<div class="card">
+											<div class="card-header" id="accordion-tab-2-heading-1">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-1" aria-expanded="false" aria-controls="accordion-tab-2-content-1">1. Wash your hands frequently.</button>
+												</h5>
+											</div>
+											<div class="collapse show" id="accordion-tab-2-content-1" aria-labelledby="accordion-tab-2-heading-1" data-parent="#accordion-tab-2">
+												<div class="card-body">
+													<p>Washing your hands with soap and water or using alcohol-based hand rub kills viruses that may be on your hands.</p>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-header" id="accordion-tab-2-heading-2">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-2" aria-expanded="false" aria-controls="accordion-tab-2-content-2">2. Maintain social distancing.</button>
+												</h5>
+											</div>
+											<div class="collapse" id="accordion-tab-2-content-2" aria-labelledby="accordion-tab-2-heading-2" data-parent="#accordion-tab-2">
+												<div class="card-body">
+													<p>When someone coughs or sneezes they spray small liquid droplets from their nose or mouth which may contain virus. If you are too close, you can breathe in the droplets, including the COVID-19 virus if the person coughing has the disease.</p>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-header" id="accordion-tab-2-heading-3">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-3" aria-expanded="false" aria-controls="accordion-tab-2-content-3">3. Avoid touching eyes, nose and mouth</button>
+												</h5>
+											</div>
+											<div class="collapse" id="accordion-tab-2-content-3" aria-labelledby="accordion-tab-2-heading-3" data-parent="#accordion-tab-2">
+												<div class="card-body">
+													<p>Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body and can make you sick.</p>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-header" id="accordion-tab-2-heading-4">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-4" aria-expanded="false" aria-controls="accordion-tab-2-content-4">4. Practice respiratory hygiene</button>
+												</h5>
+											</div>
+											<div class="collapse" id="accordion-tab-2-content-4" aria-labelledby="accordion-tab-2-heading-4" data-parent="#accordion-tab-2">
+												<div class="card-body">
+													<p>Make sure you, and the people around you, follow good respiratory hygiene. This means covering your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="tab3" role="tabpanel" aria-labelledby="tab3">
+									<div class="accordion" id="accordion-tab-3">
+										<div class="card">
+											<div class="card-header" id="accordion-tab-3-heading-1">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-1" aria-expanded="false" aria-controls="accordion-tab-3-content-1">What are the symptoms of COVID-19?</button>
+												</h5>
+											</div>
+											<div class="collapse show" id="accordion-tab-3-content-1" aria-labelledby="accordion-tab-3-heading-1" data-parent="#accordion-tab-3">
+												<div class="card-body">
+													<p>The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and begin gradually. Some people become infected but don’t develop any symptoms and don't feel unwell. Most people (about 80%) recover from the disease without needing special treatment. Around 1 out of every 6 people who gets COVID-19 becomes seriously ill and develops difficulty breathing. Older people, and those with underlying medical problems like high blood pressure, heart problems or diabetes, are more likely to develop serious illness. People with fever, cough and difficulty breathing should seek medical attention.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="tab4" role="tabpanel" aria-labelledby="tab4">
+									<div class="accordion" id="accordion-tab-4">
+										<div class="card">
+											<div class="card-header" id="accordion-tab-4-heading-1">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-4-content-1" aria-expanded="false" aria-controls="accordion-tab-4-content-1">Is there any treatment of coronavirus disease (COVID-19)?</button>
+												</h5>
+											</div>
+											<div class="collapse show" id="accordion-tab-4-content-1" aria-labelledby="accordion-tab-4-heading-1" data-parent="#accordion-tab-4">
+												<div class="card-body">
+													<p>There is no specific medicine to prevent or treat coronavirus disease (COVID-19). People may need supportive care to help them breathe.</p>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-header" id="accordion-tab-4-heading-2">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-4-content-2" aria-expanded="false" aria-controls="accordion-tab-4-content-2">Self care</button>
+												</h5>
+											</div>
+											<div class="collapse" id="accordion-tab-4-content-2" aria-labelledby="accordion-tab-4-heading-2" data-parent="#accordion-tab-4">
+												<div class="card-body">
+													<p>If you have mild symptoms, stay at home until you’ve recovered. You can relieve your symptoms if you:</p>
+													<ul>
+														<li>- Rest and Sleep</li>
+														<li>- Weep Warm</li>
+														<li>- Drink Plenty of Liquids</li>
+														<li>- Use a room humidifier or take a hot shower to help ease a Sore Throat and Cough</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-header" id="accordion-tab-4-heading-3">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-4-content-3" aria-expanded="false" aria-controls="accordion-tab-4-content-3">Medical treatments</button>
+												</h5>
+											</div>
+											<div class="collapse" id="accordion-tab-4-content-3" aria-labelledby="accordion-tab-4-heading-3" data-parent="#accordion-tab-4">
+												<div class="card-body">
+													<p>If you develop a fever, cough, and have difficulty breathing, promptly seek medical care. Call in advance and tell your health provider of any recent travel or recent contact with travelers.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="tab5" role="tabpanel" aria-labelledby="tab5">
+									<div class="accordion" id="accordion-tab-5">
+										<div class="card">
+											<div class="card-header" id="accordion-tab-5-heading-1">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-5-content-1" aria-expanded="false" aria-controls="accordion-tab-5-content-1">Is there anything I should not do?</button>
+												</h5>
+											</div>
+											<div class="collapse show" id="accordion-tab-5-content-1" aria-labelledby="accordion-tab-5-heading-1" data-parent="#accordion-tab-5">
+												<div class="card-body">
+													<p>The following measures ARE NOT effective against COVID-2019 and can be harmful:</p>
+													<ul>
+														<li>- Smoking</li>
+														<li>- Wearing multiple masks</li>														
+													</ul>
+													<p class="mt-2">In any case, if you have fever, cough and difficulty breathing seek medical care early to reduce the risk of developing a more severe infection and be sure to share your recent travel history with your health care provider.</p>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-header" id="accordion-tab-5-heading-2">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-5-content-2" aria-expanded="false" aria-controls="accordion-tab-5-content-2">Is the source of the coronavirus causing COVID-19 known?</button>
+												</h5>
+											</div>
+											<div class="collapse" id="accordion-tab-5-content-2" aria-labelledby="accordion-tab-5-heading-2" data-parent="#accordion-tab-5">
+												<div class="card-body">
+													<p>Currently, the source of SARS-CoV-2, the coronavirus (CoV) causing COVID-19 is unknown. All available evidence suggests that SARS-CoV-2 has a natural animal origin and is not a constructed virus. SARS-CoV-2 virus most probably has its ecological reservoir in bats. SARS-CoV-2, belongs to a group of genetically related viruses, which also include SARS-CoV and a number of other CoVs isolated from bats populations. MERS-CoV also belongs to this group, but is less closely related.</p>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-header" id="accordion-tab-5-heading-3">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-5-content-3" aria-expanded="false" aria-controls="accordion-tab-5-content-3">Is COVID-19 airborne?</button>
+												</h5>
+											</div>
+											<div class="collapse" id="accordion-tab-5-content-3" aria-labelledby="accordion-tab-5-heading-3" data-parent="#accordion-tab-5">
+												<div class="card-body">
+													<p>The virus that causes COVID-19 is mainly transmitted through droplets generated when an infected person coughs, sneezes, or speaks. These droplets are too heavy to hang in the air. They quickly fall on floors or surfaces. </p>
+													<p>You can be infected by breathing in the virus if you are within 1 metre of a person who has COVID-19, or by touching a contaminated surface and then touching your eyes, nose or mouth before washing your hands.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!--End Section-->
+			
+        <footer class="footer section section-lg" id="footer">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer-wgs">
+                            <div class="footer-logo footer-sd">
+                                <img src="images/logo-dark2x2.png" alt="">
+                            </div>
+                            <div class="footer-address">
+                                <p><span class="footer-md">Emergency Call:</span><a href="tel:9821631370">+91 9821631370</a></p>
+                                <p><span class="footer-md">Mail Us:</span><a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer-wgs">
+                            <div class="footer-head footer-sd">
+                                <h5>SMB Links</h5>
+                            </div>
+                            <div class="footer-link">
+                                <ul>
+                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#">What is Smart Medical Buyer
+                                    </a></li>
+                                    <li><a href="#">Partner with SMB</a></li>
+                                    <li><a href="#">SMB Blog</a></li>
+                                    <li><a href="#">SMB FAQ's</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer-wgs">
+                            <div class="footer-head footer-sd">
+                                <h5>Buy now</h5>
+                            </div>
+                            <div class="footer-link">
+                                <ul>
+                                    <li><a href="#">3M Littman Stethoscopes</a></li>
+                                    <li><a href="#">Personal Protection Kits</a></li>
+                                    <li><a href="#">Hand Sanitisers</a></li>
+                                    <li><a href="#">Medical Gloves</a></li>
+                                    <li><a href="#">Infrared Thermometers</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer-wgs">
+                            <div class="footer-wgs">
+                            <div class="footer-head footer-sd">
+                                <h5>CO-SQUAD Medical Relief Fund</h5>
+                            </div>
+                            <div class="footer-help covid-help">
+                                <h6>India needs your Help</h6>
+                                <p>Would You like to Help people from smaller cities struggling with COVID -19?</p>
+                                <a href="#" class="btn">+ Donate Now</a>
+                            </div><br><div class="footer-help covid-help">
+                                <h6>You need our Help?</h6>
+                                <p>If you are from a tier 2/3 city, we will channel donations towards your purchases.</p>
+                                <a href="#" class="btn btn-alt">+ Apply Now</a>
+                            </div>
+                            <div class="footer-social">
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </footer><!-- .footer-bar -->
+        <div class="copyright-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                       <div class="copyright">
+                           <div class="copyright-text">
+                                <p>Copyright @ 2020 <a href="#" class="copyright-brand">COVID</a> all right reserved.</p>
+                            </div>
+                            <div class="copyright-menu">
+                                <ul>
+                                    <li><a href="#">Terms of Use</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- .page-wraper  -->
+	<div id="loader-wrapper">
+	  <div id="loader"></div>
+	  <div class="loader-section section-left"></div>
+	  <div class="loader-section section-right"></div>
+	</div>
+	<div id="content">	</div>
+    
+     <!-- Resources -->
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+    <script src="https://covid.amCharts.com/data/js/world_timeline.js"></script>
+    <script src="https://covid.amCharts.com/data/js/total_timeline.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+    <!-- Chart code -->
+    <script src="assets/js/app.js"></script>
+    
+    <!-- Vendor Bundles Js -->
+    <script src="assets/js/vendor.bundle.js"></script>
+	
+    <!-- Map Scripts for this template -->
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <!-- Chart Scripts for this template -->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <!-- Axios Scripts for this template -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Custom Scripts for this template -->
+    <script async src="assets/js/script.js"></script>
+    <!--begin::Base Scripts -->
+		<!-- <script src="./assets/etc/vendors.bundle.js" type="text/javascript"></script>
+		<script src="./assets/etc/scripts.bundle.js" type="text/javascript"></script>
+		<!--end::Base Scripts -->
+		<!--begin::Page Resources -->
+		<!-- <script src="./assets/etc/data-local.js" type="text/javascript"></script> --> -->
+    <script>
+        init = {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application-json'
+            },
+            mode: 'no-cors',
+            cache: 'default'
+        }
+        myrequest = new Request("https://api.covid19india.org/raw_data.json", init)
+        LatestData = fetch(myrequest)
+        .then((res) => res)
+        .then((data) => {
+            var out = JSON.parse(JSON.stringify(data));
+            // console.log(out)
+        })
+        .catch((err) => console.log(err))
+    </script>
+    <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+</body>
+</html>

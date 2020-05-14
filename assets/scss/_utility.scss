@@ -1,0 +1,77 @@
+/*! 03.0 - UTILITY */
+
+.font{
+    &-light{
+        font-weight: 300;
+    }
+    &-normal{
+        font-weight: 400;
+    }
+    &-mid{
+        font-weight: 500;
+    }
+    &-semibold{
+        font-weight: 600;
+    }
+    &-bold{
+        font-weight: 700;
+    }
+}
+
+.text{
+    &-dark{
+        color: $text-dark !important;
+    }
+    &-light{
+        color: $text-light !important;
+    }
+    &-primary{
+        color: $primary-color !important;
+    }
+    &-shadow{
+        text-shadow: 5.298px 2.817px 1px rgba($default-color, 0.1);
+    }
+}
+
+.letter-space{
+    &-xxl{
+        letter-spacing: 0.68em;
+    }
+}
+
+.bdr{
+     border: 1px solid $border-color;
+    &-top{
+        border-top: 1px solid $border-color;
+    }
+    &-bottom{
+        border-bottom: 1px solid $border-color;
+    }
+    &-left{
+         border-left: 1px solid $border-color;
+    }
+    &-right{
+        border-right: 1px solid $border-color;
+    }
+}
+
+.overlay{
+    position: relative;
+    &:before{
+        position: absolute;
+        background: rgba(0,0,0,.5);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        content: "";
+    }
+    &-light{
+        &:before{
+            background: rgba(33,37,41,.9);
+        }
+    }
+}
+
+
+
